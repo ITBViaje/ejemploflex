@@ -1,0 +1,41 @@
+
+.row{
+    display: flex;
+    flex-direction: row;
+ 
+    padding: 10px;
+    justify-content: center;
+    background-color: aqua;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px blue;
+    background-color: aqua;
+    padding: 10px;
+}
+.copy{
+    padding: 10px;
+}
+.first{
+    order:1;
+}
+/*Media queries: manejo los estilos y los personalizo según el tamaño del dispositivo*/
+@media screen and (max-width: 700px){
+    .row{flex-direction: column;
+    background-color: green;
+    }
+}
+@media screen and (min-width: 701px) and  (max-width:900px){
+    .row{flex-direction: column;
+    background-color: rgb(223, 185, 97);
+}
+}
+
+
+
+
+/*@media screen and (max-width:600px) {
+    .row{
+        flex-direction: column;
+    }
+}*/
